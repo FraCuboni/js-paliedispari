@@ -27,12 +27,28 @@ podButton.addEventListener('click',
         const podValue = userChoicePOD.value;
         const numValue = parseInt(userChoiceNum.value);
 
+        // FUNZIONE
         const pcNum = generateRandomNumber(1,5);
 
         const somma= pcNum + numValue;
     
         console.log(somma);
 
+        let risultato;
+
+        if(somma % 2 === 0){
+            risultato = 'pari';
+        }else{
+            risultato= 'dispari';
+        }
+        console.log(risultato)
+
+        if(risultato === podValue){
+            console.log('l utente ha vinto')
+        }else{
+            console.log('l utente ha perso')
+
+        }
     }
     )
 
