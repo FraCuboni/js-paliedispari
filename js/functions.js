@@ -30,4 +30,6 @@ function palindromeCheck(string){
         let nonPalindrome = 'not palindrome';
         return nonPalindrome;
     }
+
 }
+

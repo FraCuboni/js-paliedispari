@@ -1,15 +1,24 @@
-// Palidroma
-// Chiedere all’utente di inserire una parola
-// Creare una funzione per capire se la parola inserita è palindroma
-// Pari e Dispari
-// L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
-// Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione).
-// Sommiamo i due numeri Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
-// Dichiariamo chi ha vinto.
+
 
 // palindromi
 // chiedo all'utente una parola palindroma
-const userChoicePAD = document.querySelector('.palinput');
+let userChoicePal = document.querySelector('.palinput');
+
+// bottone output
+const palButton = document.querySelector(".palbutton");
+
+// creo output
+let palOutput = document.querySelector('.paloutput');
+// inserisco la funzione creata su functions.js all'interno di un addevent listener
+palButton.addEventListener('click',
+    function(){
+        let check = palindromeCheck(userChoicePal.value);
+        palOutput.innerHTML= check;
+        
+    }
+);
+
+
 
 
 
@@ -31,6 +40,10 @@ const userChoiceNum =document.querySelector('.numberinput');
 
 // bottone per l'output
 const podButton = document.querySelector(".podbutton");
+
+
+// creo output
+let polOutput = document.querySelector('.podoutput');
 
 podButton.addEventListener('click',
     function(){
@@ -55,9 +68,9 @@ podButton.addEventListener('click',
         console.log(risultato)
 
         if(risultato === podValue){
-            console.log('l utente ha vinto')
+            polOutput.innerHTML= 'hai vinto';
         }else{
-            console.log('l utente ha perso')
+            polOutput.innerHTML= 'hai perso';
 
         }
     }
@@ -67,3 +80,4 @@ podButton.addEventListener('click',
 // sommo i numeri
 
 // stabilisco se il  numero è pari o è dispari
+        polOutput.innerHTML= c;
