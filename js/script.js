@@ -80,4 +80,4 @@ podButton.addEventListener('click',
 // sommo i numeri
 
 // stabilisco se il  numero è pari o è dispari
-        polOutput.innerHTML= c;
+  
