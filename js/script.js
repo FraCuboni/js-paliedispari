@@ -13,12 +13,29 @@
 
 
 // l'utente sceglie se pari o dispari
-const userChoicePOD = document.querySelector('.podinput')
-const userChoiceNum = document.querySelector('.numberinput')
+const userChoicePOD = document.querySelector('.podinput');
 
 // l'utente inserisce un numero da 1 a 5
+const userChoiceNum =document.querySelector('.numberinput');
 
-// genero un numero random da 1 a 5 (funzione)
+// bottone per l'output
+const podButton = document.querySelector(".podbutton");
+
+podButton.addEventListener('click',
+    function(){
+        
+        const podValue = userChoicePOD.value;
+        const numValue = parseInt(userChoiceNum.value);
+
+        const pcNum = generateRandomNumber(1,5);
+
+        const somma= pcNum + numValue;
+    
+        console.log(somma);
+
+    }
+    )
+
 
 // sommo i numeri
 
