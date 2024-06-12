@@ -9,6 +9,17 @@
 
 // palindromi
 // chiedo all'utente una parola palindroma
+const userChoicePAD = document.querySelector('.palinput');
+
+
+
+
+
+
+
+
+
+
 
 
 
